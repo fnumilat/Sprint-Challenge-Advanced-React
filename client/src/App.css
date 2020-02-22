@@ -40,6 +40,7 @@
   /* border: solid red 2px; */
   width: 100%;
   margin-bottom: 1%;
+  margin-top: 1%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -76,6 +77,19 @@
   left: 79px;
 }
 
+.dark-mode {
+  color: #fff;
+  background-color: #2a2930;
+}
+
+.dark-mode .NavBar-Title {
+  color: white;
+}
+
+.dark-mode .dark-mode__toggle {
+  border: 2px solid white;
+}
+
 /* Located at PlayersCard.js */
 
 .PlayersCard-Div {
@@ -87,10 +101,17 @@
 
 .PlayerCard-Div {
   margin-bottom: 2%;
-  border: 3px #95de0c solid;
+  /* border: 3px #95de0c solid; */
+  border-radius: 10px;
   width: 95%;
   padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
   background-color: #1b1916;
+}
+
+.PlayerCard-Div:hover {
+  background-color: #FFFA3A;
 }
 
 .PlayerCard-H1 {
@@ -98,7 +119,15 @@
   color: yellow;
 }
 
+.PlayerCard-Div:hover .PlayerCard-H1 {
+  color: red;
+}
+
 .PlayerCard-H2 {
   font-size: 18px;
   color: white;
+}
+
+.PlayerCard-Div:hover .PlayerCard-H2 {
+  color: black;
 }
