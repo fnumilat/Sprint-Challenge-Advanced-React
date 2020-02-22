@@ -31,3 +31,103 @@
     transform: rotate(360deg);
   }
 }
+
+/* Located at NavBar.js */
+
+.NavBar {
+  display: flex;
+  flex-direction: row;
+  /* border: solid red 2px; */
+  width: 100%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.NavBar-Title {
+  margin-left: 1%;
+  width: 80%;
+  font-size: 45px;
+  color: #095450;
+}
+
+.dark-mode__toggle {
+  background: #6fea00;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 100px;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+
+.toggle {
+  background: #003936;
+  border-radius: 50px;
+  height: 20px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 79px;
+}
+
+.dark-mode {
+  color: #fff;
+  background-color: #2a2930;
+}
+
+.dark-mode .NavBar-Title {
+  color: white;
+}
+
+.dark-mode .dark-mode__toggle {
+  border: 2px solid white;
+}
+
+/* Located at PlayersCard.js */
+
+.PlayersCard-Div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 1%;
+}
+
+.PlayerCard-Div {
+  margin-bottom: 2%;
+  /* border: 3px #95de0c solid; */
+  border-radius: 10px;
+  width: 95%;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  background-color: #1b1916;
+}
+
+.PlayerCard-Div:hover {
+  background-color: #FFFA3A;
+}
+
+.PlayerCard-H1 {
+  font-size: 25px;
+  color: yellow;
+}
+
+.PlayerCard-Div:hover .PlayerCard-H1 {
+  color: red;
+}
+
+.PlayerCard-H2 {
+  font-size: 18px;
+  color: white;
+}
+
+.PlayerCard-Div:hover .PlayerCard-H2 {
+  color: black;
+}
